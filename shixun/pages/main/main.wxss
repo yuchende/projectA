@@ -1,0 +1,103 @@
+/* pages/main/main.wxss */
+.contain{
+  width:747rpx;
+  height: 100vh;
+  box-sizing: border-box;
+}
+.head{
+  width: 747rpx;
+  height: 28vh;
+
+
+}
+.middle{
+  width: 747rpx;
+  height: 9vh;
+  text-align: center;
+  padding-top:50rpx;
+
+}
+.middle-text{
+  font-size: 40rpx;
+  font-weight: 300;
+  border-bottom: 1px solid gray;
+}
+.body{
+  width: 747rpx;
+  height: 63vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.blockA{
+  width:360rpx;
+  height: 380rpx;
+  border-radius: 20rpx;
+  display: inline-block;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.trA{
+  width: 48vh;
+  height: 300rpx;
+  margin-top: 10rpx;
+  border:1px solid red;
+  display: flex;
+  flex-direction: column;
+}
+.trB{
+  width:747rpx;
+  height: 70rpx;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-around;
+  font-size: 25rpx;
+}
+.tdB{
+   width: 370rpx;
+   height: 70rpx;
+
+   display: flex;
+   flex-direction: column;
+   padding-left: 10rpx;
+}
+.tdB-text1{
+  font-size:25rpx;
+}
+.tdB-text2{
+  color: gray;
+  font-size: 20rpx;
+}
+.td{
+  width: 360rpx;
+  height: 300rpx;
+
+  display: flex;
+  flex-direction: column;
+}
+.imageType{
+  width: 360rpx;
+  height: 300rpx;
+  border-radius: 10rpx;
+}
+
+
+
+
+::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+    color: transparent;
+}

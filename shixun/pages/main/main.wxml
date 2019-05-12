@@ -1,0 +1,46 @@
+<!--pages/main/main.wxml-->
+<view class='contain'>
+ <swiper class='head' indicator-dots="{{indicatorDots}}"  
+           autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="true"
+           previous-margin='50rpx'
+           next-margin='50rpx'>  
+         <block wx:for="{{imgUrls}}">  
+           <swiper-item>  
+               <image catchtap='currentMovie' data-id="{{item.id}}" data-name="{{item.descA}}" data-url='{{item.videoUrl}}' mode='aspectFit'  src="{{item.src}}" class="slide-image" width="355" height="150"/>  
+
+           </swiper-item>  
+         </block>  
+ </swiper>
+    <view class='middle'><text class='middle-text'>今日精彩推荐</text></view>
+    <view class='body'>
+
+    <block wx:for="{{movieUrl}}">
+      <view class='blockA'>
+        <view catchtap='currentMovie' 
+        data-id="{{item.id}}" 
+        data-name="{{item.name}}" 
+        data-url='{{item.videoUrl}}' 
+        data-mark='{{item.mark}}'
+          class='td'><image class='imageType'   src='{{item.imageUrl}}'></image></view>
+        <view class='tdB'><text class='tdB-text1'>{{item.name}}</text><text class='tdB-text2'>{{item.desc}}</text></view>
+      </view>
+    </block>
+     
+      <!-- <view class='trA'>
+          <view   class='td'><image class='imageType' src='/image/movie/a.jpg'></image></view>
+         
+      </view> -->
+
+      <!-- <block wx:for="{{movieUrl}}">
+      <view class='trA'>
+        <view catchtap='currentMovie' data-id="{{item.itemA.id}}" data-name="{{item.itemA.descA}}" data-url='{{item.itemA.videoUrl}}'  class='td'><image class='imageType' src='{{item.itemA.src}}'></image></view>
+        <view catchtap='currentMovie' data-id="{{item.itemB.id}}" data-name="{{item.itemB.descA}}" data-url='{{item.itemB.videoUrl}}' class='td'><image class='imageType' src='{{item.itemB.src}}'></image></view>
+      </view>
+      <view class='trB'>
+        <view class='tdB'><text class='tdB-text1'>{{item.itemA.descA}}</text><text class='tdB-text2'>{{item.itemA.descB}}</text></view>
+        <view class='tdB'><text class='tdB-text1'>{{item.itemB.descA}}</text><text class='tdB-text2'>{{item.itemB.descB}}</text> </view>
+      </view>
+      </block> -->
+    </view>
+</view>
+
